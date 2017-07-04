@@ -1,4 +1,4 @@
-# Methods
+## Methods
 
 ### init
 ```js
@@ -150,11 +150,28 @@ visitorApi.sendPostchatForm(form)
 
 Feature description: https://www.livechatinc.com/features/getting-feedback/#Post-chat-surveys
 
+### getVisitorData
+
+```js
+
+const visitorData = visitorApi.getVisitorData()
+```
+
+returned value: 
+
+| param            | type   | description                                                 |
+| ---------------- | ------ | ----------------------------------------------------------- |
+| name             | string | Visitor's name                                              |
+| email            | string | Visitor's email address                                     |
+| url              | string | Visitor's currently visiting website URL                    |
+| customProperties | object | Visitor's additional data object (custom properties)        |
+
 ### setVisitorData
 ```js
 visitorApi.setVisitorData({
     name: "Wynton Marsalis",
     email: "test@livechatinc.com",
+    url: 'http://example.org/pricing'
     customProperties: [
         "Account Id": "AB2341CWD",
         "Login": "w_marsalis",
@@ -162,13 +179,19 @@ visitorApi.setVisitorData({
 })
 ```
 
-
 params:
 
 | param            | type   | description                                                 |
 | ---------------- | ------ | ----------------------------------------------------------- |
 | name             | string | Visitor's name                                              |
 | email            | string | Visitor's email address                                     |
+| url              | string | Visitor's currently visiting website URL                    |
 | customProperties | object | Visitor's additional data object (custom properties)        |
+
+errors:
+
+| type             | reason                                         |
+| ---------------- | ---------------------------------------------- |
+| missing argument | "Missing name, email, url or customProperties" |
 
 Feature description: https://www.livechatinc.com/features/chat-tools/#Visitor-information
