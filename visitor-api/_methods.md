@@ -10,7 +10,7 @@ const visitorApi = init({
 })
 ```
 
-params:
+Parameters:
 
 | param   | type   | description              |
 | ------- | ------ | ------------------------ |
@@ -31,7 +31,7 @@ visitorApi.sendMessage({
     })
 ```
 
-params:
+Parameters:
 
 | param    | type   | description          |
 | -------- | ------ | -------------------- |
@@ -44,7 +44,7 @@ errors:
 | ---------- | -------------------- |
 | connection | "Connection timeout" |
 
-### sendFile
+### sendFile - not implemented yet
 ```js
 visitorApi.sendFile({
     file: FileObject,
@@ -58,7 +58,7 @@ visitorApi.sendFile({
     })
 ```
 
-params:
+Parameters:
 
 | param      | type   | description    |
 | ---------- | ------ | -------------- |
@@ -67,7 +67,7 @@ params:
 
 Feature description: https://www.livechatinc.com/features/chat-tools/#File-sharing
 
-### rateChat
+### rateChat - not implemented yet
 ```js
 visitorApi.rateChat({
     rate: "good",
@@ -75,7 +75,7 @@ visitorApi.rateChat({
 })
 ```
 
-params:
+Parameters:
 
 | param   | type                      | description                  |
 | ------- | ------------------------- | ---------------------------- |
@@ -84,14 +84,14 @@ params:
 
 Feature description: https://www.livechatinc.com/features/getting-feedback/#Chat-ratings
 
-### markMessageAsSeen
+### markMessageAsSeen - not implemented yet
 ```js
 visitorApi.markMessageAsSeen({
     messageId: "123123123",
 })
 ```
 
-params:
+Parameters:
 
 | param     | type   | description                        |
 | --------- | ------ | ---------------------------------- |
@@ -106,7 +106,7 @@ visitorApi.setSneakPeek({
 })
 ```
 
-params:
+Parameters:
 
 | param   | type   | description                |
 | ------- | ------ | -------------------------- |
@@ -116,14 +116,14 @@ Note: Sneak peek won't be sent every time you call a function. It will be thrott
 
 Feature description: https://www.livechatinc.com/features/chat-tools/#Message-sneak-peak
 
-### forwardChatTranscript
+### forwardChatTranscript - not implemented yet
 ```js
 visitorApi.forwardChatTranscript({
     email: "test@livechatinc.com",
 })
 ```
 
-params:
+Parameters:
 
 | param | type   | description                                                                |
 | ----- | ------ | -------------------------------------------------------------------------- |
@@ -131,26 +131,26 @@ params:
 
 Feature description: https://www.livechatinc.com/features/chat-tools/#Chat-tools-other-features
 
-### sendTicketForm
+### sendTicketForm - not implemented yet
 ```js
 visitorApi.sendTicketForm(form)
 ```
 
 Feature description: https://www.livechatinc.com/features/engaging-customers/#Ticket-form
 
-### sendPrechatForm
+### sendPrechatForm - not implemented yet
 ```js
 visitorApi.sendPrechatForm(form)
 ```
 
-### sendPostchatForm
+### sendPostchatForm - not implemented yet
 ```js
 visitorApi.sendPostchatForm(form)
 ```
 
 Feature description: https://www.livechatinc.com/features/getting-feedback/#Post-chat-surveys
 
-### getVisitorData
+### getVisitorData - not implemented yet
 
 ```js
 
@@ -179,7 +179,7 @@ visitorApi.setVisitorData({
 })
 ```
 
-params:
+Parameters:
 
 | param            | type   | description                                                 |
 | ---------------- | ------ | ----------------------------------------------------------- |
