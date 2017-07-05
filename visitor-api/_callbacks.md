@@ -1,5 +1,7 @@
 ## Callbacks
 
+Callbacks let you bind a custom JavaScript function to an event. For example, your function can be invoked every time agent's message was received.
+
 ### new_message
 
 ```js
@@ -7,7 +9,7 @@ visitorApi.on('new_message', (newMessage) => {
     console.log(newMessage)
 })
 ```
-Response:
+Payload:
 
 | param      | type    | description                   |
 | ---------- | ------- | ----------------------------- |
@@ -35,6 +37,11 @@ visitorApi.on('chat_started', (chatData) => {
     console.log(chatData)
 })
 ```
+Payload:
+
+| param  | type    | description |
+| ------ | ------- | ----------- |
+| chatId | string  | New chat id |
 
 ### visitor_queued - not implemented yet
 
@@ -54,7 +61,7 @@ visitorApi.on('new_file', (newFile) => {
 
 Feature description: [File sharing](https://www.livechatinc.com/features/chat-tools/#File-sharing)
 
-### agent_changed
+### agent_changed - not implemented yet
 
 ```js
 visitorApi.on('agent_changed', (newAgent) => {
